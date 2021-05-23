@@ -3,13 +3,13 @@
 
 int main()
 {    
-    int state_
+    int state_;
     
     enum State
     {
         STATE_CREDIT,
         STATE_TITLE,
-        STATE_OPENIG,
+        STATE_OPENING,
         STATE_DEMO
     };
     
@@ -31,7 +31,7 @@ int main()
             state_=STATE_OPENING;
             break;
         }
-        case STATE_TITLE:
+        case STATE_OPENING:
         {
             std::cout << "opening\n";
             std::this_thread::sleep_for(std::chrono::seconds(5));// 5 秒待つ
