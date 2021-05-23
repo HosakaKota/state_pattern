@@ -3,6 +3,8 @@
 
 int main()
 {    
+    int state_
+    
     enum State
     {
         STATE_CREDIT,
